@@ -1,0 +1,59 @@
+@use 'font'
+@use 'media'
+
+@mixin data-text-card
+  @include font.font-styles(100px, 300, normal, 0, none)
+
+  @include media.respond(768px)
+    font-size: 50px
+
+@mixin text-banner
+  @include font.font-styles(80px, 900, normal, 0, none)
+
+  @include media.respond(1440px)
+    font-size: 65px
+
+  @include media.respond(365px)
+    font-size: 30px
+
+@mixin block-name
+  @include font.font-styles(75px, 200, normal, 0, none)
+
+  @include media.respond(1440px)
+    font-size: 65px
+
+  @include media.respond(768px)
+    font-size: 40px
+
+@mixin data-text-card-small
+  @include font.font-styles(50px, 300, normal, 0, none)
+
+  @include media.respond(768px)
+    font-size: 38px
+
+@mixin bold-card
+  @include font.font-styles(27px, 900, 25px, 0, uppercase)
+
+@mixin text-subtitle
+  @include font.font-styles(25px, 300, 1.7, 0, none)
+
+  @include media.respond(365px)
+    font-size: 14px
+
+@mixin text-card
+  @include font.font-styles(18px, 500, 1.7, 0, none)
+
+  @include media.respond(768px)
+    font-size: 16px
+
+@mixin text-slider
+  @include font.font-styles(15px, 700, 1.7, 0, none)
+
+@mixin main-menu
+  @include font.font-styles(14px, 500, normal, 0, uppercase)
+
+@mixin text-data-teg
+  @include font.font-styles(13px, 700, 1.7, 0, none)
+
+@mixin text-button
+  @include font.font-styles(12px, 500, normal, 0.15em, uppercase)
