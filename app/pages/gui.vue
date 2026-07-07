@@ -28,6 +28,19 @@ function handleClick() {
         <UiMobileMenu />
       </div>
     </section>
+    <section>
+      <h2>Пункты меню</h2>
+      <div
+        :style="{
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: 20 + 'px'
+        }"
+      >
+        <HeaderUiMenuItem to="/" text="Главная" />
+        <HeaderUiMenuItem to="/gui" text="GUI" />
+      </div>
+    </section>
   </main>
 </template>
 
