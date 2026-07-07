@@ -42,8 +42,8 @@ withDefaults(defineProps<Props>(), {
   border-style: solid
   border-radius: 40px
   padding: 30px 50px
-  +mixins.text-button
-  +mixins.transition
+  @include text-button
+  @include transition
 
   :deep(.nuxt-icon)
     width: 13px
@@ -51,45 +51,45 @@ withDefaults(defineProps<Props>(), {
     margin-bottom: 0
     flex-shrink: 0
 
-  +mixins.tablet
+  @include tablet
     padding: 20px 30px
 
 .button_blue
   background-color: transparent
-  color: tokens.$blue
-  border-color: tokens.$blue
+  color: $blue
+  border-color: $blue
   &:hover
-    +mixins.hover
-    background-color: tokens.$blue
-    color: tokens.$white
+    @include hover
+    background-color: $blue
+    color: $white
 
 .button_light-grey
-  background-color: tokens.$very-light-grey
-  color: tokens.$black
-  border-color: tokens.$very-light-grey
+  background-color: $very-light-grey
+  color: $black
+  border-color: $very-light-grey
   &:hover
-    +mixins.hover
-    background-color: tokens.$light-grey
-    border-color: tokens.$light-grey
-    color: tokens.$white
+    @include hover
+    background-color: $light-grey
+    border-color: $light-grey
+    color: $white
 
 .button_grey-outline
   background-color: transparent
-  color: tokens.$white
-  border-color: tokens.$light-grey
+  color: $white
+  border-color: $light-grey
   &:hover
-    +mixins.hover
-    background-color: tokens.$light-grey
-    border-color: tokens.$light-grey
-    color: tokens.$white
+    @include hover
+    background-color: $light-grey
+    border-color: $light-grey
+    color: $white
 
 .button_orange
-  background-color: tokens.$orange
-  color: tokens.$white
-  border-color: tokens.$orange
+  background-color: $orange
+  color: $white
+  border-color: $orange
   &:hover
-    +mixins.hover
-    background-color: tokens.$dark-orange
-    border-color: tokens.$dark-orange
-    color: tokens.$white
+    @include hover
+    background-color: $dark-orange
+    border-color: $dark-orange
+    color: $white
 </style>

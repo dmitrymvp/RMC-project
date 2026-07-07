@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         sass: {
-          additionalData: '@use "@/assets/mixins" as mixins\n@use "@/assets/tokens/colors" as tokens\n'
+          additionalData: '@use "@/assets/mixins" as *\n@use "@/assets/tokens/colors" as *\n'
         }
       }
     }
