@@ -4,31 +4,31 @@
 @mixin data-text-card
   @include font.font-styles(100px, 300, normal, 0, none)
 
-  @include media.respond(768px)
+  @include media.tablet
     font-size: 50px
 
 @mixin text-banner
   @include font.font-styles(80px, 900, normal, 0, none)
 
-  @include media.respond(1440px)
+  @include media.laptop
     font-size: 65px
 
-  @include media.respond(365px)
+  @include media.mobile
     font-size: 30px
 
 @mixin block-name
   @include font.font-styles(75px, 200, normal, 0, none)
 
-  @include media.respond(1440px)
+  @include media.laptop
     font-size: 65px
 
-  @include media.respond(768px)
+  @include media.tablet
     font-size: 40px
 
 @mixin data-text-card-small
   @include font.font-styles(50px, 300, normal, 0, none)
 
-  @include media.respond(768px)
+  @include media.tablet
     font-size: 38px
 
 @mixin bold-card
@@ -37,13 +37,13 @@
 @mixin text-subtitle
   @include font.font-styles(25px, 300, 1.7, 0, none)
 
-  @include media.respond(365px)
+  @include media.mobile
     font-size: 14px
 
 @mixin text-card
   @include font.font-styles(18px, 500, 1.7, 0, none)
 
-  @include media.respond(768px)
+  @include media.tablet
     font-size: 16px
 
 @mixin text-slider

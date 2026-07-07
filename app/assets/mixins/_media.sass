@@ -1,3 +1,12 @@
-@mixin respond($breakpoint)
-  @media (max-width: $breakpoint)
+@mixin mobile
+  @media (max-width: 767px)
     @content
+
+@mixin tablet
+  @media (max-width: 1439px)
+    @content
+
+@mixin laptop
+  @media (max-width: 1919px)
+    @content
+
