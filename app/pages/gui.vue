@@ -1,6 +1,4 @@
 <script setup>
-import Button from '../components/ui/Button.vue'
-
 function handleClick() {
   alert('click')
 }
@@ -18,10 +16,16 @@ function handleClick() {
           gap: 20 + 'px'
         }"
       >
-        <Button text="Синяя кнопка" modifier="button_blue" @click="handleClick" />
-        <Button text="Серая кнопка" modifier="button_light-grey" without-arrow />
-        <Button modifier="button_grey-outline" />
-        <Button text="Ссылка" modifier="button_orange" to="/" />
+        <UiButton text="Синяя кнопка" modifier="button_blue" @click="handleClick" />
+        <UiButton text="Серая кнопка" modifier="button_light-grey" without-arrow />
+        <UiButton modifier="button_grey-outline" />
+        <UiButton text="Ссылка" modifier="button_orange" to="/" />
+      </div>
+      <div>
+        <UiScrollToTopButton />
+      </div>
+      <div>
+        <UiMobileMenu />
       </div>
     </section>
   </main>
