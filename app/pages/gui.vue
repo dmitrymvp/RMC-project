@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 function handleClick() {
   alert('click')
 }
@@ -41,13 +41,38 @@ function handleClick() {
         <HeaderUiMenuItem to="/gui" text="GUI" />
       </div>
     </section>
+    <section>
+      <h2>Соцсети</h2>
+      <div
+        :style="{
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: 20 + 'px'
+        }"
+      >
+        <UiSocialLink network="vk" to="https://vk.com" />
+        <UiSocialLink network="telegram" to="https://t.me" />
+      </div>
+    </section>
+    <section>
+      <h2>Контакты</h2>
+      <div
+        :style="{
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: 20 + 'px'
+        }"
+      >
+        <UiContactLink type="tel" text="+7 (3467) 370-036" to="tel:+73467370036" />
+        <UiContactLink type="mail" text="press@rmc-ugra.ru" to="mailto:press@rmc-ugra.ru" />
+      </div>
+    </section>
   </main>
 </template>
 
 <style lang="sass" scoped>
 main
   color: white
-  height: 100vh
   background-color: rgba(0, 0, 0, 0.3)
   padding: 50px
 
