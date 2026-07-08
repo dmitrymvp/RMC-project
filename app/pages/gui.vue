@@ -67,6 +67,23 @@ function handleClick() {
         <UiContactLink type="mail" text="press@rmc-ugra.ru" to="mailto:press@rmc-ugra.ru" />
       </div>
     </section>
+    <section>
+      <h2>Инпут</h2>
+      <div
+        :style="{
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: 20 + 'px'
+        }"
+      >
+        <div :style="{ width: 380 + 'px' }">
+          <UiInput placeholder="info@mail.ru" />
+        </div>
+        <div :style="{ width: 380 + 'px' }">
+          <UiInput placeholder="info@mail.ru" error />
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
