@@ -41,7 +41,7 @@ withDefaults(defineProps<Props>(), {
   border-width: 3px
   border-style: solid
   border-radius: 40px
-  padding: 30px 50px
+  padding: 27px 50px
   @include text-button
   @include transition
 
@@ -52,7 +52,7 @@ withDefaults(defineProps<Props>(), {
     flex-shrink: 0
 
   @include tablet
-    padding: 20px 30px
+    padding: 17px 30px
 
 .button_blue
   background-color: transparent
