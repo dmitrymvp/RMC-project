@@ -17,7 +17,7 @@ defineProps<Props>()
 
 <style lang="sass" scoped>
 .menu-link
-  padding: 9px 0
+  padding: 6px 0
   border-bottom: 3px solid transparent
   color: $black
   text-decoration: none
