@@ -58,8 +58,8 @@ function scrollToTop() {
       height: 46px
 
   @include tablet
-    width: 50px
-    height: 50px
+    width: 46px
+    height: 46px
     border-color: $light-blue
     &__inner-round
       width: 100%
