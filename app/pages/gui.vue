@@ -84,6 +84,19 @@ function handleClick() {
         </div>
       </div>
     </section>
+    <section
+      :style="{
+        backgroundColor: 'white',
+        color: 'black'
+      }"
+    >
+      <h2>Шапка сайта</h2>
+      <Header />
+    </section>
+    <section>
+      <h2>Подвал сайта</h2>
+      <Footer />
+    </section>
     <section>
       <h2>Поиск</h2>
       <div
