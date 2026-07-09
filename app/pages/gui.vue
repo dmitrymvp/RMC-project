@@ -84,6 +84,24 @@ function handleClick() {
         </div>
       </div>
     </section>
+    <section>
+      <h2>Поиск</h2>
+      <div
+        :style="{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          gap: 20 + 'px'
+        }"
+      >
+        <div :style="{ width: 570 + 'px' }">
+          <UiSearchInput surface="dark" />
+        </div>
+        <div :style="{ width: 570 + 'px' }">
+          <UiSearchInput surface="light" />
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
