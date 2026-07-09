@@ -22,7 +22,7 @@ defineProps<Props>()
 
 <style lang="sass" scoped>
 .contact-link
-  height: 25px
+  position: relative
   display: flex
   align-items: center
   text-align: center
@@ -34,6 +34,14 @@ defineProps<Props>()
   color: $white
   @include text-card
   @include transition
+  &::before
+    content: ''
+    position: absolute
+    bottom: 0
+    height: 3px
+    width: 100%
+    background-color: transparent
+    @include transition
 
   :deep(.nuxt-icon)
     width: 20px
@@ -45,11 +53,13 @@ defineProps<Props>()
     :deep(.nuxt-icon)
       color: $orange
     @include hover
-      border-bottom-color: $orange
+      &::before
+        background-color: $orange
 
   &_mail
     :deep(.nuxt-icon)
       color: $blue
     @include hover
-      border-bottom-color: $blue
+      &::before
+        background-color: $blue
 </style>
