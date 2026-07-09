@@ -23,6 +23,12 @@ function handleClear() {
   value.value = ''
   inputRef.value?.focus()
 }
+
+function focus() {
+  inputRef.value?.focus()
+}
+
+defineExpose({ focus })
 </script>
 
 <template>
@@ -52,7 +58,7 @@ function handleClear() {
         type="submit"
         :text="buttonText"
         without-arrow
-        :modifier="surface === 'light' ? 'button_blue' : 'button_light-grey'"
+        :modifier="surface === 'light' ? 'button_blue' : 'button_orange'"
       />
     </div>
   </form>
@@ -80,16 +86,23 @@ function handleClear() {
     height: 55px
 
   &__wrapper-field
+    position: relative
     display: flex
     justify-content: space-between
+    align-items: center
+    align-self: stretch
     flex-grow: 1
-    padding: 0 0px 0 30px
+    padding: 0 50px 0 30px
+    min-width: 0
+
 
   &__field
+    min-width: 0
+    align-self: stretch
     border: none
     background: transparent
     flex-grow: 1
-    padding-right: 30px
+    // padding-right: 30px
     color: $light-grey
     @include text-data-teg
 
@@ -102,6 +115,8 @@ function handleClear() {
 
 
   &__clear
+    position: absolute
+    right: 10px
     width: 22px
     height: 22px
     color: $white
@@ -130,15 +145,6 @@ function handleClear() {
   .wrapper-button
     position: relative
     left: 3px
-
-    :deep(.button_blue:hover)
-      background-color: transparent
-      color: $blue
-
-    :deep(.button_light-grey:hover)
-      background-color: $very-light-grey
-      border-color: $very-light-grey
-      color: $black
 
 
   &.search-input_active
